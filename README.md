@@ -4,49 +4,37 @@ BSc Intelligent Systems, Technical University of Košice (2024–2027) · Erasmu
 
 ★ = course with a project or code (links to repositories). Everything else is listed for context.
 
-## Year 1
+## Year 1 (2024/25): foundations
 
-### Winter semester
-- **Mathematics:** Mathematics I, Repetition of Mathematics
-- **Introduction to Engineering**
-- **Fundamentals:** Electrical Engineering, Materials Engineering
-  - **Fundamentals of Algorithms and Programming** (first algorithms and programming course)
-
-### Summer semester
+- **Mathematics:** Mathematics I, Mathematics II, Repetition of Mathematics
 - **Physics**
-- **Mathematics II**
+- **Fundamentals:** Electrical Engineering, Materials Engineering, Introduction to Engineering
+  - **Fundamentals of Algorithms and Programming** (first algorithms and programming course)
 - **Programming** (C)
 - ★ [Python Programming](#)
 - ★ [Introduction to Intelligent Systems](#) (includes network basics with Cisco Packet Tracer)
 
-## Year 2
+## Year 2 (2025/26): AI, data and systems
 
-### Mathematics and statistics (overview)
-Mathematics III · Numerical Mathematics, Probability Theory and Mathematical Statistics (and Physics from year 1)
-
-### AI, data and systems
+- **Mathematics and statistics:** Mathematics III, Numerical Mathematics, Probability Theory and Mathematical Statistics
 - ★ [Artificial Intelligence](#)
-- ★ [Applications of Web Technologies](#)
+- ★ [Machine Learning](#)
+- ★ [Neural Networks](#)
 - ★ [Heuristic Optimization Processes](#)
 - ★ [Database Systems Applications](#)
-- ★ [Neural Networks](#)
 - ★ [Internet of Things](#)
-- ★ [Machine Learning](#)
+- ★ [Applications of Web Technologies](#)
 - Digital Transformation and Industry 5.0
 
-## Year 3 (in progress)
+## Year 3 (2026/27, in progress)
 
-### University of Eastern Finland (Erasmus+, autumn 2026)
-- ★ [Advanced Deep Learning](#)
-- ★ [Eye Tracking](#)
-- ★ [Learning Analytics](#)
-- ★ [Robotics](#)
-
-### TUKE
 - ★ [Bachelor Project](#) (multi-agent monitoring system for multimodal industrial data)
+- **University of Eastern Finland (Erasmus+):**
+  ★ [Advanced Deep Learning](#), ★ [Eye Tracking](#), ★ [Learning Analytics](#), ★ [Robotics](#)
 - Actual Trends in Intelligent Systems
 - Computer Vision (spring 2027)
 
 ## Personal and hackathon projects
+
 - [HackKosice 2026, Best Use of DigitalOcean](#)
 - [Other projects](#)

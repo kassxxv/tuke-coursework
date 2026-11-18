@@ -28,13 +28,14 @@ BSc Intelligent Systems, Technical University of Košice (2024–2027) · Erasmu
 
 ## Year 3 (2026/27, in progress)
 
-- ★ [Bachelor Project](#) (multi-agent monitoring system for multimodal industrial data)
-- **University of Eastern Finland (Erasmus+):**
+- ★ [Bachelor Project](#) (parts 1 and 2; multi-agent monitoring system for multimodal industrial data)
+- **University of Eastern Finland (Erasmus+, autumn 2026):**
   ★ [Advanced Deep Learning](#), ★ [Eye Tracking](#), ★ [Learning Analytics](#), ★ [Robotics](#)
 - Actual Trends in Intelligent Systems
-- Computer Vision (spring 2027)
+- **Spring 2027:** Computer Vision, Cloud Technologies, Social Sciences and Technology
 
 ## Personal and hackathon projects
 
 - [HackKosice 2026, Best Use of DigitalOcean](#)
+- [Junction 2026, Bridgy](#)
 - [Other projects](#)

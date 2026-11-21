@@ -1,0 +1,32 @@
+1. Aká **aktivačná funkcia** sa používa a prečo je vhodná v tomto prípade? - ReLU je jednoduchá, dobre sa počíta a pomáha s učením hlbokých sietí с nevzniká problém tzv. "miznúcich gradientov". Preto je ReLU vhodná vo väčšine prípadov, hlavne pri klasifikácii obrázkov či textu.
+2. Prečo **štandardizujeme vstupné črty** pri tréningu neurónových sietí? - Štandardizujeme vstupné atribúty tak, aby ich priemer bol 0 a rozptyl 1. Ak by niektoré črty mali omnoho väčšie hodnoty než ostatné, mohli by “dominovať” učenie siete, čo by viedlo k pomalému alebo nestabilnému tréningu. Štandardizácia zjednoduší učenie a pomáha modelu lepšie optimalizovať váhy.
+3. Ktorá trieda mala **najväčšiu zámenu (confusion)** a čím by to mohlo byť spôsobené? - najväčšia zámena (confusion) sa objavila pri triedach versicolor a virginica. Ich črty sú podobné. Dôvodom je, že model nie vždy dokáže správne rozpoznať jemné rozdiely ak sú dáta podobné alebo sa prekrývajú.
+4. Spusť tréning s **dvomi skrytými vrstvami** alebo s inou **šírkou vrstvy** – Asi na mna presnost zostala rovnakoualebo trohu sa zvysyla na 1 - 2percent pretoze pre jednoduchý dataset ako Iris (len 4 črty, 3 triedy) už jedna skrytá vrstva stačí.
+5. Ako sa zmení trénovanie ak pridáte **L2 (weight decay)** and **early stopping**? - Ak pridame L2 regularizáciu tak sieť penalizuje príliš veľké váhy — tým sa znižuje riziko preučenia. Early stopping zastaví tréning, keď sa presnosť prestane zlepšovať — tým sa chrániš pred preučením.
+
+
+1. Vlastnými slovami vysvetlite, čo je to **stupeň príslušnosti** a ako sa interpretuje. - ide o tom, že pri FCM model neberie body ako "čisté" a "ostré" — teda že bod je buď 100% v triede alebo 0%. Miesto toho dovolí, aby bod bol v niekoľkých skupinách naraz s rôznymi stupňami.
+Z kódu vidím: u_test — to je matica príslušnosti, kde každý riadok je zhluk a v ňom vidím stupne, ako silno daný bod patrí do toho zhluku.  
+2. Prečo možno FCM trénovať **bez labelov** a kedy je to výhodné? - FCM nevyžaduje labely, pretože sa nesnaží predpovedať fixné triedy. Miesto toho hľadá prirodzené zhluky v dátach pomocou vzdialenosti.
+3. Porovnajte **presnosť FCM** s presnosťou neurónovej siete; čo môže rozdiel vysvetľovať? - Z výsledkov vidím:
+Neurónová sieť (MLP): ~97.4% presnosť
+FCM: ~94.7% presnosť
+FCM je o trocha menej presná. 
+Keby som dal FCM všetky 4 príznaky, presnosť by mala byť lepšia.
+4. Ako sa mení výkon, keď zmeníte parameter **fuzziness `m`** alebo zvolené črty (napr. všetky 4 vs. len 2)? - výsledky by sa pravdepodobne zmenili — pri menšom m by bol model bližší k tvrdému klasifikácií.
+5. Ktoré triedy (napr. **versicolor** vs. **virginica**) sa najviac **prekrývajú** a prečo? - Tieto dva druhy sú biologicky podobnejšie ako setosa
+Majú podobné veľkosti, Setosa sa ľahko odlíši — je menšia
+
+
+1. Aký je rozdiel medzi **Fuzzy C-Means** a **Mamdani FIS** v spôsobe vytvárania rozhodnutí? - Fuzzy C-Means sám si rozdelí body podľa podobnosti a potom podľa väčšiny vyberiem triedy z týchto zhlukov.
+Mamdani FIS - rozhodnutia vznikajú podľa mojich manuálne zadaných
+2. Ako ovplyvňuje tvar funkcie príslušnosti (trojuholník, gaussovka) výsledky inferencie? - Tvar funkcie príslušnosti určuje, ako ostro alebo mäkko sa číslo zaradí do pojmu.
+3. Ktoré črty (petal length/width) sa ukázali ako najvhodnejšie pre tvorbu pravidiel? - petal length a petal width
+4. Ako by sa zmenil výsledok ak by ste pridali ďalšiu funkciu príslušnosti a mali by ste *Low*, *Medium low*, *Medium high* a *High* pre petal length a petal width? - niekedy to zlepší presnosť, lebo zachytím jemné prechody (najbližšie bodom k hranici tried)
+
+
+1. Ako sa líši prístup GA od gradientového učenia v neurónových sieťach? - Genetický algoritmus úplne ignoruje derivácie, gradienty či matrice. Nerieši matematické “smerovanie” váh — len skúša veľa rôznych kombinácií pravidiel (hodnoty prahov), meria ich presnosť a vyberie tie najlepšie.
+Neurónová sieť používa gradieny, t.j. učí sa po malých krokoch upravených podľa chyby.
+2. Aké výhody má GA z hľadiska **interpretovateľnosti modelu**? - GA pravidlá si ľahko overím ručne, ľahko ich vysvetlím spolužiakom alebo učiteľovi, hneď viem, čo znamenajú.
+3. Ako ovplyvňuje **veľkosť populácie** a **počet generácií** konečný výsledok? - Väčšia populácia (= viac kanditátov) a viac generácií (= dlhšie behanie) umožní algoritmu vyskúšať viac kombinácií a nájsť lepšie, stabilnejšie riešenia.
+4. Ako by sa zmenila presnosť, ak by sa do pravidiel pridala aj **sepal length** alebo **sepal width**? - Pravidlá by sa stali flexibilnejšie, model by bol schopný lepšie rozlíšiť triedy, hlavne tie, ktoré sa prekrývajú (napr. versicolor vs virginica).
